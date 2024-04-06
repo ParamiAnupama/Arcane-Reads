@@ -14,6 +14,7 @@
  </style>
 </head>
 <body>
+<div class="body_container">
     <div class="container">
         <h2>Sign Up</h2>
         <?php
@@ -25,8 +26,8 @@
         ?>
         <form action="sellersignup_process.php" method="POST">
             <input type="text" name="seller_id" placeholder="ID" required><br>
-            <input type="text" name="shop_name" placeholder="Shop Name" required><br>
-            <input type="text" name="shop_address" placeholder="Shop Address" required><br>
+            <input type="text" name="shop_name" placeholder="Author Name" required><br>
+            <input type="text" name="shop_address" placeholder="Author Address" required><br>
             <input type="email" name="email" placeholder="Email" required><br>
             <input type="tel" name="contact_no" placeholder="Contact Number" required><br>
             <input type="password" name="password" placeholder="Password" required><br>
@@ -35,5 +36,9 @@
         </form>
         <p>Already have an account? <a href="./seller_login.php">Login here</a></p>
     </div>
+    </div>
+    <footer> 
+        <p>&copy; 2024 Arcane-Reads. All rights reserved.</p>
+    </footer>
 </body>
 </html>

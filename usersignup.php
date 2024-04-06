@@ -14,6 +14,7 @@
  </style>
 </head>
 <body>
+<div class="body_container">
     <div class="container">
         <h2>Sign Up</h2>
         <?php
@@ -31,12 +32,18 @@
             <input type="tel" name="contact_no" placeholder="Contact Number" required><br>
             <input type="text" name="address" placeholder="Address" required><br>
             <input type="password" name="password" placeholder="Password" required><br>
-            <input type="date" name="date" placeholder="Registered Date" required><br>
+            <span class="form_text">Registered Date</span>
+            <br>
+            <input type="date" name="date" required><br>
            
             <br>
             <button type="submit">Sign Up</button>
         </form>
         <p>Already have an account? <a href="./user_login.php">Login here</a></p>
     </div>
+    </div>
+    <footer> 
+        <p>&copy; 2024 Arcane-Reads. All rights reserved.</p>
+    </footer>
 </body>
 </html>

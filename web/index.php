@@ -10,11 +10,15 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
-
+    
     <div class="container">
-        <h1>Latest</h1> 
+
+        <h1 class="h1_main">Arcane-Reads</h1>
+        <h2 class="h2_main">Create Read Immerse Yourself...</h2>
+
+        <h2 class="h2_sub">Latest</h2> 
         
-        <h1>Genres</h1>
+        <h2 class="h2_sub">Genres</h2>
         <?php include 'genre_list.php'; ?>
     </div>
         

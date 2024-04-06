@@ -8,13 +8,13 @@
 </head>
 <body>
 <header class="header">
-    <div class="header-bottom" data-header>
+    
         <div class="nav_container">
             
             <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
                     <div class="logo">
-                        <li class="navbar-item"><img src="../assets/images/logoAR.png" alt="logo" width="80px" height="50px" /></li>
+                        <li class="navbar-logo"><img src="../assets/images/logoAR.png" alt="logo" width="100px" height="70px" /></li>
                     </div>
                     <li class="navbar-item">
                         <a href="../web/index.php" class="navbar-link" data-nav-link>Home</a>
@@ -43,7 +43,7 @@
             </nav>
             
         </div>
-    </div>
+    
 </header>
 </body>
 </html>

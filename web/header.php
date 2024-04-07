@@ -34,10 +34,10 @@
                             <p id="genre-msg" class="genre-msg"></p>
                     </li>
                     <li class="navbar-item">
-                        <a href="../user_login.php" class="navbar-link" data-nav-link>Reader</a>
+                        <a href="../Login-Signup/user_login.php" class="navbar-link" data-nav-link>Reader</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="../seller_login.php" class="navbar-link" data-nav-link>Author</a>
+                        <a href="../Login-Signup/seller_login.php" class="navbar-link" data-nav-link>Author</a>
                     </li>
                 </ul>
             </nav>

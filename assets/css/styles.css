@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .body_container {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #333;
+    height:100vh;
 }
 
 .form_text {
@@ -15,9 +18,10 @@
     color: #595757;
 }
 
-.container {
+.log_container {
+    margin-top: 0%;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px  hsl(0, 0%, 0%);
@@ -45,12 +49,12 @@ button:hover {
     box-shadow: 0px 0px 10px 0px  hsl(0, 0%, 0%);
 }
 
-a {
+p a {
     text-decoration: none;
     color: hsla(241, 79%, 49%, 0.995);
 }
 
-a:hover {
+p a:hover {
     text-decoration: underline;
 }
 

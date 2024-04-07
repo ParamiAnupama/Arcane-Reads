@@ -25,8 +25,8 @@ if(isset($_GET['id'])) {
         while ($row = $result->fetch_assoc()) {
             $genreName = $row["GenreName"];
             $genreDescription = $row["GenreDescription"];
-            echo "<h2>$genreName</h2>";
-            echo "<p>$genreDescription</p>";
+            echo "<h2 class='h2_sub'>$genreName</h2>";
+            echo "<p class='h2_para'>$genreDescription</p>";
         }
 
         // Retrieve novels for the selected genre

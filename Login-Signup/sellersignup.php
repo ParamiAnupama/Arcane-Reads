@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Assets/css/styles.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
     <style>
        .radiotext{
     text-align: left;
@@ -14,8 +15,12 @@
  </style>
 </head>
 <body>
+    
+<?php include '../web/header.php'; ?>
+
 <div class="body_container">
-    <div class="container">
+
+    <div class="log_container">
         <h2>Sign Up</h2>
         <?php
         // Check if an error message exists in the URL parameters

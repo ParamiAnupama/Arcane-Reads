@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Assets/css/styles.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
     <style>
         .error-message {
             color: red;
@@ -12,8 +13,12 @@
     </style>
 </head>
 <body>
+
+<?php include '../web/header.php'; ?>
+
 <div class="body_container">
-    <div class="container">
+
+    <div class="log_container">
         <h2>Login</h2>
         <?php
             if (isset($_GET['error'])) {

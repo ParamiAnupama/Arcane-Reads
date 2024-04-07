@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
         $genreCoverImg = IMAGE_BASE_PATH . $row["GenreCoverImg"];
 
         echo "<div class='genre-item'>";
-        echo "<a href='../genres/genre.php?id=$genreID' class='navbar-link'><img src='$genreCoverImg' alt='$genreName Cover Image'></a>";
+        echo "<a href='../genres/genre.php?id=$genreID' class='navbar-link'><img src='$genreCoverImg' alt='$genreName Cover Image'>$genreName</a>";
         echo "</div>";
     }
     echo '</div>'; // Close genre-container

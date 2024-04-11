@@ -200,3 +200,41 @@ footer {
   padding: 1%;
   position: absolute bottom;
 }
+
+/* CSS for novel container */
+.novel_container {
+  display: flex;
+
+}
+
+/* CSS for novel item */
+.novel_item {
+  flex: 1; /* Each item takes up equal space */
+  width: calc(25% - 20px); /* Adjust for padding */
+  margin-bottom: 20px; /* Add margin between items */
+  box-sizing: border-box; /* Ensure padding doesn't affect item width */
+  text-align: center; /* Center the content horizontally */
+}
+
+/* Remove margin from the last item to prevent extra space */
+.novel_item:last-child {
+  margin-right: 0;
+}
+
+
+.novel_item a {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.novel_name {
+  margin-top: 5px; /* Adjust spacing between image and novel name */
+  font-weight: bold;
+  color: white;
+}
+
+.novel_name:hover{
+  color: #b0c3e3;
+}

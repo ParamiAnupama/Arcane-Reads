@@ -1,3 +1,5 @@
+
+
 body{
   background-image: url(../images/main_bg.jpg);
   padding: 0;
@@ -6,13 +8,8 @@ body{
 }
 
 
-@font-face{
-  font-family: "ITC Medea W01 Extra Bold";
-  src: url("https://db.onlinewebfonts.com/t/661bf1532b87a1df22906f51cfe17e93.woff");
-}
-
 .h1_main{
-  font-family: ITC Medea W01 Extra Bold;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 80px;
   font-weight: 600;
   color:rgb(62, 14, 207);
@@ -24,7 +21,7 @@ body{
 .h2_main{
   margin-top: 1%;
   margin-bottom: 1%;
-  font-family: ITC Medea W01 Extra Bold;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
   font-weight: 700;
   font-style: italic;
@@ -40,10 +37,10 @@ body{
 }
 
 .h2_sub{
-  font-family: ITC Medea W01 Extra Bold;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
-  font-weight: 200;
-  color:  #bfcfea;
+  font-weight: 700;
+  color:  #d3def1;
 }
 
 .nav_container{
@@ -55,7 +52,7 @@ body{
   bottom: 0;
   padding-top: 10px;
   padding-bottom: 2px;
-  position: fixed top;
+  position: top;
 }
 
 .container {
@@ -65,6 +62,7 @@ body{
   margin-top: 0%;
   margin-bottom: 0%;
   padding: 20px;
+  
 }
 
 
@@ -160,6 +158,11 @@ body{
   box-sizing: border-box; /* Ensure padding doesn't affect item width */
 }
 
+/* Remove margin from the last item in a row */
+.genre-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .genre-item a {
   display: block;
   text-align: center; /* Center the content horizontally */
@@ -167,7 +170,7 @@ body{
 
 .genre-item img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
   display: block;
   margin: 0 auto; /* Center the image horizontally */
 }
@@ -178,8 +181,17 @@ body{
   font-weight: bold;
 }
 
+.profile a{
+  color: #d3def1;
+  text-decoration: none;
+}
+
+.profile a:hover{
+  text-decoration: underline;
+}
 
 .profile h2 {
+  color: #6383b7;
   margin-top: 0;
 }
 
@@ -192,7 +204,12 @@ body{
   margin-bottom: 10px;
 }
 
+.profile p {
+  color: #d3def1;
+}
+
 footer {
+  bottom: 100%;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -204,27 +221,31 @@ footer {
 /* CSS for novel container */
 .novel_container {
   display: flex;
-
+  flex-wrap: wrap; /* Allow items to wrap onto new lines */
 }
 
 /* CSS for novel item */
 .novel_item {
-  flex: 1; /* Each item takes up equal space */
-  width: calc(25% - 20px); /* Adjust for padding */
-  margin-bottom: 20px; /* Add margin between items */
+  width: calc(25% - 20px); /* Set the width of each item (25% of the container width minus margin) */
+  margin-right: 20px; /* Add margin between items */
+  margin-bottom: 40px; /* Add margin between rows */
   box-sizing: border-box; /* Ensure padding doesn't affect item width */
   text-align: center; /* Center the content horizontally */
 }
 
-/* Remove margin from the last item to prevent extra space */
-.novel_item:last-child {
+/* Remove margin from the last item in a row */
+.novel_item:nth-child(4n) {
   margin-right: 0;
 }
 
+/* CSS for novel item image */
+.novel_item img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: 250px; /* Maintain aspect ratio */
+}
 
 .novel_item a {
   max-width: 100%;
-  height: auto;
   display: block;
   margin: 0 auto; /* Center the image horizontally */
 }

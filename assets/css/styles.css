@@ -5,11 +5,11 @@ body{
 .body_container {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height:110vh;
 }
 
 .form_text {
@@ -19,7 +19,6 @@ body{
 }
 
 .log_container {
-    margin-top: 0%;
     text-align: center;
     background-color: #ffffff;
     padding: 20px;

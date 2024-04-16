@@ -20,7 +20,7 @@
                         <a href="../web/index.php" class="navbar-link" data-nav-link>Home</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="../web/shop.html" class="navbar-link" data-nav-link>Shop</a>
+                        <a href="../web/favourites.php" class="navbar-link" data-nav-link>Favourites</a>
                     </li>
                     <li class="navbar-item">
                         <a href="../web/comments.html" class="navbar-link" data-nav-link>Comments</a>

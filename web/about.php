@@ -13,9 +13,10 @@
 
     
     <div class="container">
-    <h1 class="about_h1">About Me</h1>
+    <h1 class="h2_main">About Me</h1>
         <div class="profile">
-            <img src="profile.jpg" alt="Profile Picture">
+            <img src="../assets/images/about_pic.jpg" alt="Creator" width="200px" height="200px">
+            <br><br>
             <h2>Jane Doe</h2>
             <p>Web Developer</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec fermentum mauris. Cras condimentum vehicula lacus, et faucibus mi sollicitudin sit amet.</p>

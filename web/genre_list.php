@@ -19,6 +19,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output data of each genre
     echo '<div class="genre-container">';
+    $count = 0;
     while ($row = $result->fetch_assoc()) {
         $genreID = $row["GenreID"];
         $genreName = $row["GenreName"];
@@ -27,6 +28,15 @@ if ($result->num_rows > 0) {
         echo "<div class='genre-item'>";
         echo "<a href='../genres/genre.php?id=$genreID' class='navbar-link'><img src='$genreCoverImg' alt='$genreName Cover Image'>$genreName</a>";
         echo "</div>";
+
+        $count++;
+
+            // Check if four novels have been displayed
+            if ($count % 4 == 0) {
+                // Add a line break
+                echo "<br><br>";
+            }
+
     }
     echo '</div>'; // Close genre-container
 } else {

@@ -28,7 +28,7 @@ if(isset($_GET['id'])) {
             $genreCatchPhrase = $row["GenreCatchPhrase"];
             echo "<h2 class='h2_sub'>$genreName</h2>";
             echo "<p class='h2_para'>$genreDescription</p>";
-            echo "<p class='h2_para'>$genreCatchPhrase</p><br>";
+            echo "<p class='h2_para'>$genreCatchPhrase</p><br><br>";
         }
 
         // Retrieve novels for the selected genre
@@ -37,6 +37,7 @@ if(isset($_GET['id'])) {
 
         if ($novelResult->num_rows > 0) {
             echo '<div class="novel_container">';
+            $count = 0;
             while ($novelrow = $novelResult->fetch_assoc()) {
                 $novelID = $novelrow["NovelID"];
                 $novelName = $novelrow["Title"];
@@ -46,7 +47,17 @@ if(isset($_GET['id'])) {
                 echo "<a href='../novelss/novel.php?id=$novelID' class='navbar-link'><img src='$novelCoverImg' alt='$novelName Cover Image'>";
                 echo "<div class='novel_name'>$novelName</div></a>";
                 echo "</div>";
+            
+            $count++;
+
+            // Check if four novels have been displayed
+            if ($count % 4 == 0) {
+                // Add a line break
+                echo "<br><br>";
             }
+
+        }
+
             echo '</div>'; // Close novel-container
             
                 } else {

@@ -58,7 +58,7 @@
                 ?>
             </select>
             </br></br>
-            <button type="submit">Search</button>
+            <button class="search" type="submit">Search</button>
 
             <br>
 

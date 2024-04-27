@@ -37,7 +37,7 @@
             <input type="tel" name="contact_no" placeholder="Contact Number" required><br>
             <input type="password" name="password" placeholder="Password" required><br>
             <br>
-            <button type="submit">Sign Up</button>
+            <button class="login" type="submit">Sign Up</button>
         </form>
         <p>Already have an account? <a href="./seller_login.php">Login here</a></p>
     </div>

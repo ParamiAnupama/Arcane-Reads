@@ -42,7 +42,7 @@
             <input type="date" name="date" required><br>
            
             <br>
-            <button type="submit">Sign Up</button>
+            <button class="login" type="submit">Sign Up</button>
         </form>
         <p>Already have an account? <a href="./user_login.php">Login here</a></p>
     </div>

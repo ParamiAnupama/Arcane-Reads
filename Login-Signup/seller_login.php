@@ -30,7 +30,7 @@
             <br>
             <input type="password" name="password" placeholder="Password" required>
             <br>
-            <button type="submit">Login</button>
+            <button class="login" type="submit">Login</button>
         </form>
         <p>Don't have an account yet? <a href="./sellersignup.php">Sign up here</a></p>
     </div>

@@ -20,18 +20,21 @@
                         <a href="../web/index.php" class="navbar-link" data-nav-link>Home</a>
                     </li>
                     <li class="navbar-item">
+                        <a href="../web/search.php" class="navbar-link" data-nav-link>Search</a>
+                    </li>
+                    <li class="navbar-item">
                         <a href="../web/favourites.php" class="navbar-link" data-nav-link>Favourites</a>
                     </li>
                     <li class="navbar-item">
                         <a href="../web/comments.html" class="navbar-link" data-nav-link>Comments</a>
                     </li>
-                    <li class="navbar-item">
-                        <a href="../web/about.php" class="navbar-link" data-nav-link>About</a>
-                    </li>
                     <li class="navbar-item dropdown">
                         <a href="#" class="navbar-link" data-nav-link>Genres</a>
                             <?php include 'dropdown_menu.php'; ?>
                             <p id="genre-msg" class="genre-msg"></p>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="../web/about.php" class="navbar-link" data-nav-link>About</a>
                     </li>
                     <li class="navbar-item">
                         <a href="../Login-Signup/user_login.php" class="navbar-link" data-nav-link>Reader</a>

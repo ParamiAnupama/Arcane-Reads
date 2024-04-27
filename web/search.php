@@ -24,7 +24,7 @@
             <input type="text" id="author_search" name="author_search" placeholder="Enter author's name">
             </br></br>
             <label for="genre" class="h2_para">Filter by Genre &nbsp;</label>
-            <select id="genre" name="genre">
+            <select id="genre" name="genre" >
             <?php
                 // Connect to your MySQL database
                 $servername = "localhost";
@@ -99,7 +99,7 @@
                     while ($row = $genreResult->fetch_assoc()) {
                         $genreName = $row["GenreName"];
                         $genreDescription = $row["GenreDescription"];
-                        echo "<h2 class='h2_main'>Results</h2><br>";
+                        echo "<h2 class='h2_main'>Results - $genreName </h2><br>";
                         
                     }
 
@@ -131,6 +131,7 @@
                     if ($novelResult->num_rows > 0) {
                         // Display novels
                         echo '<div class="novel_container">';
+                        
                         while ($novelRow = $novelResult->fetch_assoc()) {
                             $novelID = $novelRow["NovelID"];
                             $novelName = $novelRow["Title"];
@@ -150,9 +151,10 @@
                 }
 
                 // Close the prepared statements and database connection
+                
+                $conn->close();
                 $genreStmt->close();
                 $novelStmt->close();
-                $conn->close();
             } 
             ?>
 

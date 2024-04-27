@@ -262,7 +262,7 @@ footer {
   color: #b0c3e3;
 }
 
-input[type="text"], select, option {
+input[type="text"], select{
     margin: 10px 0;
     padding: 10px ;
     box-sizing: border-box;
@@ -271,19 +271,21 @@ input[type="text"], select, option {
 }
 
 button {
-  background-color: hsla(241, 54%, 55%, 0.955);
+  background-color: hsla(241, 48%, 78%, 0.955);
   color: #000000;
   cursor: pointer;
   font-weight: bolder;
   margin: 10px 0;
   padding: 10px 20px 10px 20px;
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px 0px  hsl(0, 0%, 0%);
   border-radius: 5px;
 
 }
 
 button:hover {
-  background-color:  hsla(241, 67%, 44%, 0.856) ;
+  background-color:  hsla(241, 43%, 52%, 0.81) ;
   box-shadow: 0px 0px 10px 0px  hsl(0, 0%, 0%);
+  color: #ffffff;
 }
